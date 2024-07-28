@@ -1,0 +1,20 @@
+{
+  "name": "allure",
+  "version": "1.0.0",
+  "description": "Allure",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1",
+    "morgan": "^1.10.0",
+    "nano-id": "^1.1.0",
+    "nanoid": "^5.0.7",
+    "nodemon": "^3.1.4"
+  }
+}
