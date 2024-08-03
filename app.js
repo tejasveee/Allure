@@ -10,15 +10,14 @@ app.use(express.json());
 var morgan = require("morgan");
 app.use(morgan("tiny"));
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
-
 const adminRoute = require("./routes/admin-routes");
 app.use("/api/admin", adminRoute);
 
+const productRoute = require("./routes/product-routes");
+app.use("/api/product", productRoute);
+
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Server is runing on port ${port}`);
 });
 
 mongodb: mongoose.connect(process.env.MONGO_URL);

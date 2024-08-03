@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "6a463dbf-3017-47ea-a5ff-0ebd21489cfe",
+		"name": "Allure APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37125918"
+	},
+	"item": [
+		{
+			"name": "Create Admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"abc@email.com\"\r\n   \r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/admin",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Product (skincare)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\":\"Dot and Key Daycream\",\r\n   \"price\":580,\r\n    \"description\":\"Dot & Key Retinol + Ceramide Sleep Treatment Anti-Ageing Night Cream For Fine Lines & Wrinkles\",\r\n     \"category\":\"skincare\", \r\n     \"imageURL\":\"https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/7/0/70ea50bDOTKE00000047_01.jpg\", \r\n     \"brandName\":\"Dot & Key\"\r\n    \r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/product?apikey=0wks3sjv",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"product"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "0wks3sjv"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Product (fragrance)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\":\"Nykaa Endless\",\r\n   \"price\":639,\r\n    \"description\":\"Love Struck is a collection of fragrances that makes you want to fall head over heels in love.\",\r\n     \"category\":\"fragrance\", \r\n     \"imageURL\":\"https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/3/63d66838904245712143_1.jpg\", \r\n     \"brandName\":\"Nykaa\"\r\n    \r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/product?apikey=0wks3sjv",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"product"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "0wks3sjv"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/product",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
