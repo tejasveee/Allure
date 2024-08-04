@@ -7,131 +7,349 @@
 	},
 	"item": [
 		{
-			"name": "Create Admin",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"email\":\"abc@email.com\"\r\n   \r\n    }",
-					"options": {
-						"raw": {
-							"language": "json"
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server_url}}/api/product?id=66adf14f94a83c266f8f8685&apikey=0wks3sjv",
+							"host": [
+								"{{server_url}}"
+							],
+							"path": [
+								"api",
+								"product"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "66adf14f94a83c266f8f8685"
+								},
+								{
+									"key": "apikey",
+									"value": "0wks3sjv"
+								}
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "localhost:3000/api/admin",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"admin"
-					]
+				{
+					"name": "Create Product (skincare)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\":\"Dot and Key Daycream\",\r\n   \"price\":580,\r\n    \"description\":\"Dot & Key Retinol + Ceramide Sleep Treatment Anti-Ageing Night Cream For Fine Lines & Wrinkles\",\r\n     \"category\":\"skincare\", \r\n     \"imageURL\":\"https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/7/0/70ea50bDOTKE00000047_01.jpg\", \r\n     \"brandName\":\"Dot & Key\"\r\n    \r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server_url}}/api/product?apikey=0wks3sjv",
+							"host": [
+								"{{server_url}}"
+							],
+							"path": [
+								"api",
+								"product"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "0wks3sjv"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product (skincare)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\":\"Dot and Key Retinol cream\",\r\n   \"price\":580,\r\n    \"description\":\"Dot & Key Retinol + Ceramide Sleep Treatment Anti-Ageing Night Cream For Fine Lines & Wrinkles\",\r\n     \"category\":\"skincare\", \r\n     \"imageURL\":\"https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/7/0/70ea50bDOTKE00000047_01.jpg\", \r\n     \"brandName\":\"Dot & Key\"\r\n    \r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server_url}}/api/product?apikey=0wks3sjv&id=66adf627754660cd3bc76514",
+							"host": [
+								"{{server_url}}"
+							],
+							"path": [
+								"api",
+								"product"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "0wks3sjv"
+								},
+								{
+									"key": "id",
+									"value": "66adf627754660cd3bc76514"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Product (fragrance)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\":\"Nykaa Endless\",\r\n   \"price\":639,\r\n    \"description\":\"Love Struck is a collection of fragrances that makes you want to fall head over heels in love.\",\r\n     \"category\":\"fragrance\", \r\n     \"imageURL\":\"https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/3/63d66838904245712143_1.jpg\", \r\n     \"brandName\":\"Nykaa\"\r\n    \r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server_url}}/api/product?apikey=0wks3sjv",
+							"host": [
+								"{{server_url}}"
+							],
+							"path": [
+								"api",
+								"product"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "0wks3sjv"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product (fragrance)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\":\"Nykaa vivre\",\r\n   \"price\":639,\r\n    \"description\":\"Love Struck is a collection of fragrances that makes you want to fall head over heels in love.\",\r\n     \"category\":\"fragrance\", \r\n     \"imageURL\":\"https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/3/63d66838904245712143_1.jpg\", \r\n     \"brandName\":\"Nykaa\"\r\n    \r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server_url}}/api/product?apikey=0wks3sjv&id=66adf5d9754660cd3bc76510",
+							"host": [
+								"{{server_url}}"
+							],
+							"path": [
+								"api",
+								"product"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "0wks3sjv"
+								},
+								{
+									"key": "id",
+									"value": "66adf5d9754660cd3bc76510"
+								}
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Create Product (skincare)",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n   \"name\":\"Dot and Key Daycream\",\r\n   \"price\":580,\r\n    \"description\":\"Dot & Key Retinol + Ceramide Sleep Treatment Anti-Ageing Night Cream For Fine Lines & Wrinkles\",\r\n     \"category\":\"skincare\", \r\n     \"imageURL\":\"https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/7/0/70ea50bDOTKE00000047_01.jpg\", \r\n     \"brandName\":\"Dot & Key\"\r\n    \r\n    }",
-					"options": {
-						"raw": {
-							"language": "json"
+			"name": "Public",
+			"item": [
+				{
+					"name": "Get Products",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server_url}}/api/product",
+							"host": [
+								"{{server_url}}"
+							],
+							"path": [
+								"api",
+								"product"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "localhost:3000/api/product?apikey=0wks3sjv",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"product"
-					],
-					"query": [
-						{
-							"key": "apikey",
-							"value": "0wks3sjv"
+				{
+					"name": "Get Skincare Products",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server_url}}/api/product/getskincare",
+							"host": [
+								"{{server_url}}"
+							],
+							"path": [
+								"api",
+								"product",
+								"getskincare"
+							]
 						}
-					]
+					},
+					"response": []
+				},
+				{
+					"name": "Get Fragrance Products",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server_url}}/api/product/getfragrance",
+							"host": [
+								"{{server_url}}"
+							],
+							"path": [
+								"api",
+								"product",
+								"getfragrance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Single Product",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server_url}}/api/product/singleproduct?id=66adf5d9754660cd3bc76510",
+							"host": [
+								"{{server_url}}"
+							],
+							"path": [
+								"api",
+								"product",
+								"singleproduct"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "66adf5d9754660cd3bc76510"
+								}
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
 		},
 		{
-			"name": "Create Product (fragrance)",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n   \"name\":\"Nykaa Endless\",\r\n   \"price\":639,\r\n    \"description\":\"Love Struck is a collection of fragrances that makes you want to fall head over heels in love.\",\r\n     \"category\":\"fragrance\", \r\n     \"imageURL\":\"https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/3/63d66838904245712143_1.jpg\", \r\n     \"brandName\":\"Nykaa\"\r\n    \r\n    }",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:3000/api/product?apikey=0wks3sjv",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"product"
-					],
-					"query": [
-						{
-							"key": "apikey",
-							"value": "0wks3sjv"
-						}
-					]
-				}
-			},
-			"response": []
-		},
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
 		{
-			"name": "Get Products",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:3000/api/product",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"product"
-					]
-				}
-			},
-			"response": []
+			"key": "server_url",
+			"value": "localhost:3001",
+			"type": "string"
 		}
 	]
 }
