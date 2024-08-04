@@ -12,9 +12,6 @@ app.use(express.json());
 var morgan = require("morgan");
 app.use(morgan("tiny"));
 
-const adminRoute = require("./routes/admin-routes");
-app.use("/api/admin", adminRoute);
-
 const productRoute = require("./routes/product-routes");
 app.use("/api/product", productRoute);
 
