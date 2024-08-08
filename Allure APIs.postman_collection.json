@@ -53,7 +53,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n   \"name\":\"Dot and Key Daycream\",\r\n   \"price\":580,\r\n    \"description\":\"Dot & Key Retinol + Ceramide Sleep Treatment Anti-Ageing Night Cream For Fine Lines & Wrinkles\",\r\n     \"category\":\"skincare\", \r\n     \"imageURL\":\"https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/7/0/70ea50bDOTKE00000047_01.jpg\", \r\n     \"brandName\":\"Dot & Key\"\r\n    \r\n    }",
+							"raw": "{\r\n    \"name\": \"The Body Shop Shea Shower Cream\",\r\n    \"price\": 496,\r\n    \"description\": \" The Body Shop Shea Shower Cream.\",\r\n    \"imageURL\": \"https://images-static.nykaa.com/media/catalog/product/1/8/18ea8d1E000289a_a0.jpg\",\r\n    \"brandName\": \"The Body Shop\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
